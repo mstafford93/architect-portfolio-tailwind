@@ -10,6 +10,9 @@
     tailwind.config = {
       theme: {
         extend: {
+          backgroundImage: {
+        'unsplash-arc': "url('unsplash-arc.jpg')"
+          },
           colors: {
             customgrey: '#7A7878',
           }
@@ -70,6 +73,33 @@
       <h1 class="text-4xl font-black">03</h1>
     </div>
   </section>
+  <div class="grid grid-cols-2 m-4 justify-around border border-black">
+    <div class="m-4 bg-unsplash-arc bg-cover justify-end "> <!--Talk about in blog-->
+      <p>Project 001</p>
+      <h2>The Monolith Pavilion</h2>
+      <p>Exploration of concrete as a fluid yet structural element in public transit hubs</p>
+      <button>View Case Study <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+    <div>
+      <div class="m-4 text-xl bg-slate-300 p-3">
+        <h5 class="text-slate-700 my-2">Methodology</h5>
+        <h4 class="font-black text-2xl my-2">BIM Integration &amp; Structural Analytics</h4>
+        <p class="my-2">Every project follows a rigid grid system of 8px increments, ensuring mathmatical perfection
+          from initial concept to the final blueprint.</p>
+        <hr />
+        <div class="flex justify-evenly">
+          <p class="border-b-4 p-2">CAD</p>
+          <p class="border-b-4 p-2">3D Mapping</p>
+          <p class="border-b-4 p-2">Sustainabilty</p>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </body>
 
 </html>
