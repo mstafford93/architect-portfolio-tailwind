@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!--Tailwind v3.4.17-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'unsplash-arc': "url('unsplash-arc.jpg')"
+                    },
+                    colors: {
+                        customgrey: '#7A7878',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/9feed898f7.js" crossorigin="anonymous"></script>
+    <!--icons from font awesome-->
 </head>
 <body>
-    
+    <nav class="flex justify-between m-2 p-4 border-b-4 border-black">
+        <p class="font-black">Student_Portfolio_V1</p>
+        <ul class="flex">
+            <li class="mx-4 hover:text-customgrey"><a href="index.html">Home</a></li>
+            <li class="mx-4 hover:text-customgrey"><a href="project.html">Projects</a></li>
+            <li class="mx-4 underline underline-offset-8 font-bold"><a href="contact.html">Contact</a></li>
+        </ul>
+        <div>
+            <i class="fa-solid fa-magnifying-glass mx-2"></i>
+            <button class="bg-black p-1 text-white rounded-lg hover:bg-customgrey">Download CV</button>
+        </div>
+    </nav>
+
 </body>
+
 </html>
